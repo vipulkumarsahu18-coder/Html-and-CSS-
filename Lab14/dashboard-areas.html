@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Layout</title>
+
+    <style>
+        .dashboard {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            gap: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: navy;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: lightgreen;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: gray;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <header class="header">
+            <h2>Dashboard Header</h2>
+        </header>
+
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Home</p>
+            <p>Profile</p>
+            <p>Settings</p>
+        </aside>
+
+        <main class="main">
+            <h2>Main Content</h2>
+            <p>Welcome to the dashboard layout.</p>
+        </main>
+
+        <footer class="footer">
+            <p>Dashboard Footer</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
